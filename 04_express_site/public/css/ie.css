@@ -1,0 +1,9 @@
+ul {
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd&apos, '<li class="last"></li>'));
+}
+ul .last {
+	margin-left: 100%;
+}
+* html ul { /* need ie6 only */
+	height: 30px;
+}

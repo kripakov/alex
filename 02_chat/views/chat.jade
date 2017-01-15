@@ -1,0 +1,91 @@
+html
+  head
+    link(rel='stylesheet', type='text/css', href='./css/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='./css/bootstrap/css/bootstrap-responsive.css')
+    link(rel='stylesheet', type='text/css', href='./css/user.css')
+  body
+    .container
+      .row-fluid
+        .span4
+          ul.pager
+            li
+              a.btn(href='#myModalCreateRoom', role='button', data-toggle='modal')
+                img(alt='', src='./icons/iconmonstr-plus-5-icon-32.png')
+          #myModalCreateRoom.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h3#myModalLabel Create Room
+            .modal-body
+              #NameRoom
+                input.input-xxlarge(type='text', placeholder='Create room')
+            .modal-footer
+              button#CreateRoom.btn(data-dismiss='modal', aria-hidden='true') Add
+        .span4
+          ul.pager
+            li
+              a(href='#')
+                img(alt='', src='./icons/iconmonstr-email-2-icon-32.png')
+            li
+              a(href='')
+                img(alt='', src='./icons/iconmonstr-email-7-icon-32.png')
+            li
+              a.btn(href='#myModalDBUser', role='button', data-toggle='modal')
+                img(alt='', src='./icons/iconmonstr-user-11-icon-32.png')
+          //
+             Button to trigger modal <a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+          //
+             Modal 
+          #myModalDBUser.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h3#myModalLabel Search users and append to the chat
+            .modal-body
+              form.form-search(method='post', action='/findUsers')
+                .input-append
+                  input.span8.search-query(type='text', name='searchUser')
+                  button.btn(type='submit') Search
+            .modal-footer
+              button.btn(data-dismiss='modal', aria-hidden='true') Close
+              button.btn.btn-primary Add
+        .span4
+          ul.pager
+            li
+              a(href='#')
+                img(src='./icons/iconmonstr-audio-3-icon-32.png')
+            li
+              a(href='#')
+                ul
+                  li OFF
+                  li ON
+                  li#0.button
+                    button.btn.btn-sm.user-button(type='button')
+    .container
+      .row-fluid
+        .span12
+          .span4.container
+            .list-group
+              .tabbable.tabs-left
+                ul#listUsersBD.nav.nav-tabs.span8
+                  li.span12#general_room
+                    ul.nav.nav-tabs
+                      li#add.span6
+                        a.btn(href='#myModalDBUser', role='button', data-toggle='modal')
+                          img(alt='add room', src='./icons/iconmonstr-user-11-icon-32.png')
+                      li#close.span5
+                        a.btn(href='#myModalCloseUser', role='button', data-toggle='modal')
+                          img(alt='delete room', src='./icons/iconmonstr-x-mark-4-icon-32.png')
+                  li
+                    a(href='#b0.0', data-toggle='tab')
+                      p.indef general_room
+          .span8.container
+            .message-scroll
+              .tab-content
+            .user-footer
+              .row
+                .span12
+                  input.input-xxlarge(type='text', value='Type Your message here')
+  script(type='text/javascript', src='./js/jquery-1.11.1.js')
+  script(type='text/javascript', src='./js/user.js')
+  script(type='text/javascript', src='/socket.io/socket.io.js')
+  script(type='text/javascript', src='./js/socketChat.js')
+  script(type='text/javascript', src='./js/bootstrap.js')

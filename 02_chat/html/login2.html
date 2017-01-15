@@ -1,0 +1,49 @@
+<html>
+    
+    <head>
+    <meta charset=utf-8 />
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/css/bootstrap-responsive.css">
+        <link rel="stylesheet" type="text/css" href="./css/user.css">
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="hero-unit">
+                <form class="form-horizontal" method="post" action="/login">
+                    <div class="control-group">
+                        <label class="control-label">Your Name</label>
+                        <div class="controls">
+                            <input type="text" id="inputName" placeholder="name" name="username">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">Second Name</label>
+                            <div class="controls">
+                                <input type="text" id="inputSecondName" placeholder="secondName" name="secondname">
+                            </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword">Password</label>
+                        <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="pass" name="password">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label class="checkbox">
+                                <input type="checkbox">Save me</label>
+                            <button type="submit" class="btn">Go</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="./js/user.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/socketChat.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</html>

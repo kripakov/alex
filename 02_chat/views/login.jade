@@ -1,0 +1,28 @@
+!!! 5
+html
+  head
+    script(src='../js/jquery-1.9.1.min.js')
+    meta(charset='utf-8')
+    title JS Bin
+  body
+    h1 Login
+    p
+      | Try accessing
+      a(href='/restricted') /restricted, 
+      then authenticate with "alex" and "kripakov"
+    form(method='post', action='/login')
+      p
+        label Username:
+        input(type='text', name='username')
+      p
+        label Second Name:
+        input(type='text', name='secondname')
+      p
+        label Prof:
+        input(type='text', name='prof')
+      p
+        label Password:
+        input(type='text', name='password')
+      p
+        input(type='submit', value='login')
+    script(type='text/javascript', src='../js/socket.js')

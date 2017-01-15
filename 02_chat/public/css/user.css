@@ -1,0 +1,42 @@
+.user-footer{
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+}
+.user-button{
+	padding: 15px
+}
+.button{
+	position: relative;
+	right: 25px;
+}
+.image-sound{
+	background-image: url(../icons/iconmonstr-audio-3-icon-32.png);
+	background-repeat: no-repeat;
+}
+.user-scroll{
+	height: 400px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+.message-scroll{
+	height: 350px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+li,img {
+	margin-right: 5px
+}
+.user{
+	height: 50px;
+}
+.colorUser{
+	background-color: 'yellow';
+	color: 'green'
+}
+.tab-pane p{
+	margin-top: 35px;
+}
+.input-xxlarge {
+	padding: 20px;
+}

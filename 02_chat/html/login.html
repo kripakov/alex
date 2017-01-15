@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <meta charset=utf-8 />
+        <title>JS Bin</title>
+    </head>
+    
+    <body>
+         <h1>Login</h1>
+
+        <p>Try accessing<a href="/restricted">/restricted, </a>
+
+            <then>authenticate with "alex" and "kripakov"</then>
+        </p>
+        <form method="post" action="/login">
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username">
+            </p>
+            <p>
+                <label>Second Name:</label>
+                <input type="text" name="secondname">
+            </p>
+            <p>
+                <label>Prof:</label>
+                <input type="text" name="prof">
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="text" name="password">
+            </p>
+            <p>
+                <input type="submit" value="login">
+            </p>
+        </form>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <!-- <script type="text/javascript" src="../js/socket.js"></script> -->
+        <!-- <script type="text/javascript">
+           var socket = io.connect("http://localhost:8081");
+            socket.on("connect", function () {
+                console.log("connect has successfully");
+                socket.emit("getField", function () {
+                    var field = [];
+                    $(":submit").click(function () {
+                        alert("  ");
+                        $("input:text").each(function (i, e) {
+                            field.push($(e).attr("name"));
+                            console.log(field);
+                            socket.emit("getField", field);
+                        });
+                    });
+                });
+            });
+        </script> -->
+    </body>
+
+</html>

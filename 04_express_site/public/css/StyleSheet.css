@@ -1,0 +1,98 @@
+html,body{
+    height:100%;
+}
+body {
+    text-align:center;
+}
+.content{
+	width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+header{
+    
+}
+.product{
+	width: auto;
+	height:22px;
+	padding:10px 25px;
+	border: 1px solid #000;
+	background-image: url(../icons/pattern1.png);
+}
+ul {
+	text-align: justify;
+	overflow: hidden; /* íóæíî ÷òîáû îáðåçàòü ðàçíûå ïîáî÷íûå ýôôåêòû ïðèåìà */
+	height: 20px; /* íóæíà ÷òîáû óñòðàíèòü îäèí ïîáî÷íûé ýôôåêò, íî èíîãäà ìîæíî îáîéòèñü áåç íåå */
+	width:200px;
+	float:right;
+	cursor: default; /* ðàñòÿíóòûé òåêñò justify ïðèâåäåò ê òîìó ÷òî ïî÷òè âñÿ ïëàøêà ìåíþ áóäåò èìåòü cursor: text */
+	margin: 50px 100px 0 100px;
+	background: #CCCCCC;
+	padding: 5px;
+}
+li {
+	display: inline; /* ÷òîáû ïóíêòû ìåíþ âûñòóïàëè â ðîëè òåêñòà */
+}
+li a {
+	display: inline-block; /* ÷òîáû íå ðàçðûâàëèñü ñëîâà â ïóíêòàõ ìåíþ */
+	color: #0000CC;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+}
+a:hover {
+	color: #ff0000;
+}
+ul:after { /* ýìóëÿöèÿ äîïîëíèòåëüíîé ñòðîêè, ÷òîáû ñðàáîòàë justify */
+	content: "1";
+	margin-left: 100%;
+	height: 1px;
+	overflow: hidden;
+	display: inline-block;
+}
+nav {
+	width:130px;
+}
+aside{
+	padding-left:10px;
+}
+aside nav{
+	display: inline-block;
+	width: 37.333333333333336%;
+	padding:20px;
+	border: 1px solid #ddd;
+	margin: 0 40px 15px 0;
+	vertical-align: top;
+	text-align: left;
+	background-image: url(../icons/pattern.png);
+}
+nav img{
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 20px;
+}
+.main{
+	margin-top: 30px;
+}
+.name{
+	text-transform: uppercase;
+	margin: 15px 0 15px 0;
+	font-weight: 800;
+	font-size: 26px;
+	text-decoration: none;
+	font-family: 'Pathway Gothic One', sans-serif;
+	text-decoration: none;
+}
+.read{
+	margin-top:15px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+}
+figcaption{
+	text-align: justify;
+}
+span{
+	font-family: 'Pathway Gothic One', sans-serif;
+}

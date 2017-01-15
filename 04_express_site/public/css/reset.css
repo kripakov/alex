@@ -1,0 +1,87 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* îáíóëÿåì îòñòóïû è óáèðàåì áîðäþðû */
+	vertical-align: baseline;          /* ïðèâîäèì âñå ê îäíîé áàçîâîé ëèíèè */
+	background: transparent;      /* ÷òîáû íå ïðîñêàêèâàëè ëåâûå ôîíû, óñòàíîâëåííûå ïî óìîë÷àíèþ */
+	font-size: 100%;                     /* ðàçìåð øðèôòà âñåì îäèíàêîâûé */
+}
+a {                                      	     /* ññûëêà íå â îáùåì ñïèñêå ÷òîáû íå ñáðàñûâàòü outline ïî óìîë÷àíèþ */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+table {						/* óñòðàíÿåì îòñòóïû ìåæäó ÿ÷åéêàìè òàáëèöû */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* âîçâðàùàåì ïðèâû÷íîå âåðòèêàëüíîå âûðàâíèâàíèå */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* óáèðàåì îòñòóïû ïî óìîë÷àíèþ äëÿ ýëåìåíòîâ ôîðì (â ÷àñòíîñòè äëÿ checkbox è radio) */
+	font-size: 100%; 			/* äåëàåì ðàçìåð øðèôòîâ âåçäå îäèíàêîâûì */
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 				/* óáèðàåì âíóòðåííèå îòñòóïû äëÿ òåêñòîâûõ ïîëåé */
+}
+input[type="checkbox"] { 		/* âåðòèêàëüíîå âûðàâíèâàíèå ÷åêáîêñîâ è ðàäèîáàòîíîâ îòíîñèòåëüíî ìåòîê */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- áàçîâûå íàñòðîéêè ---------*/
+html {
+	overflow-y: scroll; /* âñåãäà ïîêàçûâàåì âåðòèêàëüíóþ ïîëîñó ïðîêðóòêè  */
+}
+html, body {
+	height: 100%; /* ÷òîáû ïîäâàë êíèçó ìîæíî áûëî ïðèæàòü */
+}
+body {
+	line-height: 1;
+	background: #fff;
+	color: #000;
+	text-align: left;
+	font: 14px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; /* èñïîëüçóåì áåçîïàñíûå øðèôòîâûå CSS ñòåêè */
+}
+input, select, button, textarea {
+	font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; /* ÷òîáû øðèôò áûë òàêîé æå êàê è âåçäå */
+}
+label, input[type="button"], input[type="submit"], button {
+	cursor: pointer; /* êóðñîð â âèäå ðóêè äëÿ âñåõ êëèêàáåëüíûõ ýëåìåíòîâ ôîðì */
+}
+a { /* ïîðÿäîê ïðàâèë äëÿ ññûëîê èìååò çíà÷åíèå */
+	color: #287fc3;
+	text-decoration: underline;
+}
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+a:focus, a:active {
+	color: #287fc3;
+	text-decoration: underline;
+}
+
+/* --------------- /áàçîâûå íàñòðîéêè ---------*/
